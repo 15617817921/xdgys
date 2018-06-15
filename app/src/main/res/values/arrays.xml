@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主页-图标-->
+    <integer-array name="home_icon_up">
+        <item>@drawable/wpbmx</item>
+        <item>@drawable/syrdj</item>
+        <item>@drawable/qlffd</item>
+    </integer-array>
+    <!--主页-文字-->
+    <string-array name="home_text_up">
+        <item>物品包明细</item>1
+        <item>使用人登记</item>2
+        <item>请领发放单</item>3
+    </string-array>
+    <integer-array name="home_icon_down">
+        <item>@drawable/qingdian</item>
+        <item>@drawable/qingxi</item>
+        <item>@drawable/dabao</item>
+        <item>@drawable/miejun</item>
+        <item>@drawable/fafang</item>
+        <item>@drawable/huishou</item>
+
+    </integer-array>
+    <!--主页-文字-->
+    <string-array name="home_text_down">
+        <item>清点</item>5
+        <item>清洗</item>6
+        <item>打包</item>1
+        <item>灭菌</item>2
+        <item>发放</item>3
+        <!--<item>回收</item>4-->
+        <item>追溯</item>4
+    </string-array>
+
+</resources>

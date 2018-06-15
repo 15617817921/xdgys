@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:background="@color/liang"
+
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@drawable/bg_bao"
+            android:text="包"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_9" />
+
+        <TextView
+            android:id="@+id/tv_ordernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_toRightOf="@+id/bao"
+            android:text="100000000000"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_13"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_zjren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/tv_ffkeshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:text=""
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_13" />
+
+    </RelativeLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginLeft="@dimen/x10"-->
+    <!--android:layout_marginRight="@dimen/x10"-->
+    <!--android:background="@color/item_view" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="绷带包"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:text="发放中"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_15" />
+    </FrameLayout>
+</LinearLayout>

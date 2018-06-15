@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">消毒供应室管理系统</string>
+
+
+    <string name="dabao">打包</string>
+    <string name="miejun">灭菌</string>
+    <string name="fafang">发放</string>
+    <string name="huishou">回收</string>
+    <string name="qingdian">清点</string>
+    <string name="qingxi">清洗</string>
+
+    <string name="wupinbaomingxi">物品包明细</string>
+    <string name="shiyongrdj">使用人登记</string>
+    <string name="qinglingffd">请领发放单</string>
+
+
+    <string name="fafangqingkuang">发放情况</string>
+
+    <string name="shezhi">设置</string>
+
+    <string name="qingkong">清空架</string>
+    <string name="jishuqingxi">结束清洗</string>
+    <string name="xiayibu">下一步</string>
+    <string name="jishuxiaodu">结束消毒</string>
+    <string name="saoma">扫码</string>
+    <string name="qingsaoma">请扫码</string>
+    <string name="paizhao">拍照</string>
+    <string name="zhuisu">追溯</string>
+    <string name="wpbimage">物品包照片</string>
+    <string name="ffkeshi">发放到科室</string>
+
+    <string name="keshixz">选择科室</string>
+    <string name="gonghao">输入工号</string>
+    <string name="updata">纠错</string>
+    <string name="wpbjiucuo">物品包纠错</string>
+    <string name="czscwpb">查找首次物品包</string>
+    <string name="qkdqb">清空扫描物品包</string>
+    <string name="quxiao">取 消</string>
+    <string name="queding">确 定</string>
+
+
+    <!-- Strings related to login -->
+    <string name="webservice">http://192.168.1.109:303/HSMS_Service.asmx</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

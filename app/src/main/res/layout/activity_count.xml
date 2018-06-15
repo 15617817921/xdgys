@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_count"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chen.hsms.activity.home_down.QingDianActivity">
+
+    <!--<include layout="@layout/toolbar" />-->
+    <!--标题-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@color/state">
+
+        <ImageView
+            android:id="@+id/iv_qingdian_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/back_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/qingdian"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_saoma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:text="@string/saoma"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"
+            android:textStyle="normal" />
+    </FrameLayout>
+    <!--查询-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@color/state"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_serch_et"
+            android:inputType="number"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:hint="请扫码"
+            android:textColor="@color/bg_et_t"
+            android:textColorHint="@color/bg_et_t"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao1"-->
+            <!--android:text="1" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao2"-->
+            <!--android:text="2" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao3"-->
+            <!--android:text="3" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao4"-->
+            <!--android:text="4" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao5"-->
+            <!--android:text="5" />-->
+
+        <!--<Button-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="sao6"-->
+            <!--android:text="6" />-->
+    <!--</LinearLayout>-->
+    //有数据
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_qingdian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_view"
+            android:padding="@dimen/x10"
+            android:text="" />
+
+        <!--<com.example.chen.hsms.view.CoustomListView-->
+        <!--android:id="@+id/rv_data"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/white" />   -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_wuData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无更多数据"
+            android:textSize="@dimen/text_16" />
+    </FrameLayout>
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/liang"-->
+    <!--android:padding="@dimen/x10"-->
+    <!--android:text="未审核" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_wei"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@android:color/white" />-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/liang"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:padding="@dimen/x10"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="已审核" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.RecyclerView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/rv_shenhe"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@android:color/white" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <Button
+        android:id="@+id/tv_zhibao"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x30"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_bt_tong"
+        android:gravity="center"
+        android:text="制包"
+        android:layout_marginBottom="@dimen/x10"
+        android:textColor="@color/white" />
+</LinearLayout>

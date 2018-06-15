@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.chen.hsms.activity.home_ohter.PatientListActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40"
+            android:background="@color/brlb"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_brlb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/x10"
+                android:src="@mipmap/back" />
+
+            <EditText
+                android:id="@+id/et_brlb_searach"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/y25"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_brlb_et"
+                android:hint="请输入病人姓名或住院号"
+                android:lines="1"
+                android:paddingLeft="@dimen/x10"
+                android:textColor="@color/brlb_et_text"
+                android:textColorHint="@color/brlb_et_text"
+                android:textSize="@dimen/text_14" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_brlb_cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/x5"-->
+            <!--android:layout_marginRight="@dimen/x10"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="取消"-->
+            <!--android:textColor="@color/lu"-->
+            <!--android:textSize="@dimen/text_16" />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/item_view" />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="chaxun"
+            android:text="扫码查询" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcy_brlb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+</LinearLayout>

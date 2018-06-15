@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+"apply plugin: 'android-apt'"
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.example.chen.hsms"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/Text.json']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.github.lishide:BaseAndroidDev:v1.0.7'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support:design:25.+'
+    //    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.bigkoo:svprogresshud:1.0.6'
+    compile 'com.alibaba:fastjson:1.2.34'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.1'
+    //    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+    //    compile 'com.android.support:support-v4:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    compile 'com.github.githubwing:DragPhotoView:1.0.1'
+    compile 'com.google.code.gson:gson:2.8.2'
+//    compile 'com.gongwen:swipeback:1.0.2'
+    compile 'com.sunfusheng:marqueeview:1.3.1'
+    //    compile files('libs/ksoap2-android-2.5.4.jar.zip')
+    compile 'cn.bingoogolapple:bga-swipebacklayout:1.1.8'
+//    compile 'com.sunfusheng:marqueeview:1.3.0'
+    compile 'com.gongwen:marqueelibrary:1.1.0'
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--1002 肿瘤科-->
+    <TextView
+        android:id="@+id/tv_keshi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y25"
+        android:background="@color/liang"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x10"
+        android:text=""
+        android:textColor="@color/text_a"
+        android:textSize="@dimen/text_13" />
+
+    <com.example.chen.hsms.view.CoustomListView
+        android:id="@+id/lv_fafang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" />
+</LinearLayout>

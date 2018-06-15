@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liang"
+    android:orientation="vertical">
+
+
+
+        <include layout="@layout/layout_base" />
+
+        <!--选择病人-->
+        <FrameLayout
+            android:id="@+id/fl_choose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="请选择病人"
+                android:textColor="@color/hei"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:drawablePadding="@dimen/x8"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/x10"
+                android:text=""
+                android:textColor="@color/hui"
+                android:textSize="@dimen/text_13" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_useGood"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y35"
+                android:background="@color/item_view"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="共使用5个物品包"
+                android:textColor="@color/hei"
+                android:textSize="@dimen/text_15" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_userreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_wuData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="暂无更多数据"
+                android:textSize="@dimen/text_16" />
+        </FrameLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_bt_tong"
+            android:gravity="center"
+            android:onClick="dengji"
+            android:text="登记"
+            android:textColor="@color/white" />
+    </LinearLayout>

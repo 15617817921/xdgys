@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/state</item>
+        <item name="colorPrimaryDark">@color/state</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--  <item name="android:actionMenuTextColor">@android:color/white</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>-->
+        <!--NavigationIcon的宽度-->
+        <item name="toolbarNavigationButtonStyle">@style/mToolbarNavigationButtonStyle</item>
+        <!--&lt;!&ndash;toolbar内的控件（自定义的或者系统预置的如标题）距离NavigationIcon和屏幕左边的距离，类似marginStart&ndash;&gt;-->
+        <item name="toolbarStyle">@style/mToolbarStyle</item>
+        <!-- <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+         <item name="actionMenuTextColor">@android:color/white</item>-->
+    </style>
+
+    <style name="mToolbarNavigationButtonStyle" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">@dimen/x10</item>
+    </style>
+
+    <style name="mToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <!--使自定义view可以贴左右的边，多数版本的系统不要下面两句也可以，但少量版本必须加下面的两句-->
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+    <!-- 登录页面主题-->
+    <style name="AppTheme.NoActionBar"  parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 防止欢迎页白屏或者黑屏，设置图片 -->
+        <item name="android:windowBackground">@drawable/logo</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--tablayout字体大小-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <!-- 主题页（非第一级页面让Activity透明） -->
+    <style name="backPageStyle" parent="AppTheme.Base">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--pop  RadioButton类型-->
+    <style name="RadioButtonStyle">
+        <item name="android:background">@drawable/bg_radiobutton</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_margin">@dimen/x5</item>
+        <item name="android:textColor">@drawable/text_choose_rb</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否背景模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置背景模糊的透明度-->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+
+    <!-- popUpWindow弹入弹出动画 -->
+    <style name="popwindow_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+    <!-- -->
+    <style name="SetCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_set_style</item>
+    </style>
+    <!-- Toolbar主题设置-->
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <!--  <item name="android:textColorSecondary">#ffffff</item>
+          <item name="android:colorBackground">#aa333333</item>-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle
+        </item> <!--新增一个item，用于控制menu-->
+        <!-- <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>-->
+    </style>
+    <!--修改toolbar弹出菜单的位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+    <!--修改toolbar菜单按钮的style-->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <!--
+                <item name="android:src">@login_normal/ico_fail</item>
+        -->
+    </style>-->
+    <!--toolbar菜单按钮的颜色-->
+    <style name="ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow"></style>
+    <!--用于控制toolbar溢出菜单的样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--控制头部据appbar的样式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+</resources>

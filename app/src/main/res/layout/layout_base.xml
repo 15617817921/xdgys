@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--标题-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@color/state">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x20"
+            android:src="@mipmap/back_toolbar" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"
+            android:textStyle="normal" />
+    </FrameLayout>
+    <!--查询-->
+    <LinearLayout
+        android:id="@+id/ll_srkuang"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@color/state"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_serach"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_serch_et"
+            android:hint="请扫码"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:textColor="@color/bg_et_t"
+            android:textColorHint="@color/bg_et_t"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.example.chen.hsms.fragment.QueryFragment">
+    <!--科室-->
+    <FrameLayout
+        android:id="@+id/fl_query_keshi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="科室"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tv_query_keshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:drawablePadding="@dimen/x8"
+            android:drawableRight="@drawable/icon_next"
+            android:gravity="center_vertical"
+            android:text="1002 肿瘤科"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_13" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/item_view" />
+    <!--日期-->
+    <FrameLayout
+        android:id="@+id/fl_query_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text="日期"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tv_query_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:drawablePadding="@dimen/x8"
+            android:drawableRight="@drawable/icon_next"
+            android:gravity="center_vertical"
+            android:text="2017/05/10"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_13" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/item_view" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rcy_query"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:scrollbars="none" />-->
+    //有数据
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_data"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/liang">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_show"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/y25"-->
+            <!--android:background="@color/liang"-->
+            <!--android:gravity="center"-->
+            <!--android:text="当天已发放3个科室，8个包"-->
+            <!--android:textColor="@color/lu"-->
+            <!--android:textSize="@dimen/text_13" />-->
+    <!--</LinearLayout>-->
+    //无数据
+
+    <FrameLayout
+        android:id="@+id/fl_wuData"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无更多数据"
+            android:textSize="@dimen/text_16" />
+    </FrameLayout>
+</LinearLayout>

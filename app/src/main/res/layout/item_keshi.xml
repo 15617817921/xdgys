@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_keshi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_keshiid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x10"
+        android:text=""
+        android:textColor="@color/hui"
+        android:textSize="@dimen/text_14" />
+    <TextView
+        android:gravity="right"
+        android:id="@+id/tv_keshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/x10"
+        android:text=""
+        android:textColor="@color/hei"
+        android:textSize="@dimen/text_14" />
+
+</FrameLayout>

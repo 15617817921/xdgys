@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0px"
+    android:keyHeight="50.0dp"
+    android:keyWidth="16.666667%p"
+    android:verticalGap="0px">
+    <Row>
+        <Key
+            android:codes="00001"
+            android:keyEdgeFlags="left"
+            android:keyLabel="35." />
+        <Key
+            android:codes="00002"
+            android:keyLabel="36." />
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="-5"
+            android:keyEdgeFlags="right"
+            android:keyIcon="@mipmap/back_toolbar" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="00003"
+            android:keyEdgeFlags="left"
+            android:keyLabel="37." />
+        <Key
+            android:codes="00004"
+            android:keyLabel="38." />
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="00009"
+            android:keyEdgeFlags="right"
+            android:keyLabel="清空" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="00005"
+            android:keyEdgeFlags="left"
+            android:keyLabel="39." />
+        <Key
+            android:codes="00006"
+            android:keyLabel="40." />
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="-3"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"
+            android:keyLabel="隐藏" />
+    </Row>
+    <Row>
+        <Key
+            android:codes="00007"
+            android:keyEdgeFlags="left"
+            android:keyLabel="41." />
+        <Key
+            android:codes="00008"
+            android:keyLabel="42." />
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+        <Key
+            android:codes="46"
+            android:keyLabel="." />
+        <Key
+            android:codes="47"
+            android:keyLabel="/"
+            android:keyWidth="11.111111%p" />
+        <Key
+            android:codes="58"
+            android:keyLabel=":"
+            android:keyWidth="11.111111%p" />
+        <Key
+            android:codes="32"
+            android:keyEdgeFlags="right"
+            android:isRepeatable="true"
+            android:keyLabel="空格"
+            android:keyWidth="11.111111%p" />
+    </Row>
+</Keyboard>

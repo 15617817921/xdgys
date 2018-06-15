@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_danhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="单号：110"
+            android:textColor="@color/text_rb"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/tv_keshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:gravity="center"
+            android:text="科室：ubkij"
+            android:textColor="@color/text_rb"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x3"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_shenheren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:text="单号：110"
+            android:textColor="@color/text_rb"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/tv_shenhe_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x8"
+            android:gravity="center"
+            android:text="科室：ubkij"
+            android:textColor="@color/text_rb"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+</LinearLayout>

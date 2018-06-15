@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+
+        <include layout="@layout/layout_base" />
+
+        <!--灭菌锅类型-->
+        <FrameLayout
+            android:id="@+id/fl_miejun"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="灭菌锅类型"
+                android:textColor="@color/hei"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_miejun_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/x10"
+                android:drawablePadding="@dimen/x8"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/hui"
+                android:textSize="@dimen/text_13" />
+        </FrameLayout>
+
+        //显示数据
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_wpbNum_xd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y35"
+                android:background="@color/item_view"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text="共回收五个物品包"
+                android:textColor="@color/hei"
+                android:textSize="@dimen/text_14" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_miejun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wuData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/liang"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无更多数据"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/fl_miejun_end"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@android:color/white">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/y40"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_margin="@dimen/x10"-->
+                <!--android:background="@drawable/next_tv_bg"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/jishuxiaodu"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="@dimen/text_16" />-->
+        <!--</FrameLayout>-->
+
+</LinearLayout>

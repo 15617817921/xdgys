@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/liang"
+    android:orientation="vertical"
+   >
+
+
+        <include layout="@layout/layout_base" />
+        <!--有数据-->
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_pack_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y35"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x10"
+                android:text=""
+                android:textColor="@color/hei"
+                android:textSize="@dimen/text_14" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.chen.hsms.view.CoustomListView
+                        android:id="@+id/rcy_pack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        //无数据
+
+        <FrameLayout
+            android:id="@+id/fl_wudata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/liang">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="暂无更多数据"
+                android:textSize="@dimen/text_16" />
+        </FrameLayout>
+
+
+    </LinearLayout>

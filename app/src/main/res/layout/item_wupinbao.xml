@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y40"
+    android:paddingLeft="@dimen/x14"
+    android:paddingRight="@dimen/x14">
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:text="绷带包"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/tv_wpbmx_dw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:text="件"
+        android:textColor="@color/hui"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/tv_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tv_wpbmx_dw"
+        android:padding="@dimen/x5"
+        android:text="1"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/text_14" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/item_view" />
+</RelativeLayout>

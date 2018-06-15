@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.example.chen.hsms.activity.home_down.CleanActivity">
+
+    <!--<include layout="@layout/toolbar" />-->
+    <!--标题-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@color/state">
+
+        <ImageView
+            android:id="@+id/iv_qingxi_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x20"
+            android:src="@mipmap/back_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/qingxi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_saoma"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:text="@string/saoma"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"
+            android:textStyle="normal" />
+    </FrameLayout>
+    <!--查询-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y35"
+        android:background="@color/state"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/et_clean"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_serch_et"
+            android:hint="请扫码"
+            android:inputType="number"
+            android:paddingLeft="@dimen/x10"
+            android:paddingRight="@dimen/x10"
+            android:textColor="@color/bg_et_t"
+            android:textColorHint="@color/bg_et_t"
+            android:textSize="@dimen/text_14" />
+    </LinearLayout>
+
+    <!--//有数据-->
+    <ScrollView
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--类型1 追溯当前-->
+            <FrameLayout
+                android:id="@+id/fl_cerrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/item_view">
+
+                <TextView
+                    android:id="@+id/tv_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/x10"
+                    android:text=""
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tv_type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/x10"
+                    android:text=""
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_18" />
+            </FrameLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_zhuisu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" />
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/y1"-->
+                <!--android:background="@color/state" />-->
+            <!--已审核-->
+            <!--类型2  追溯发放过的-->
+            <FrameLayout
+                android:id="@+id/fl_yff"
+                android:background="@color/item_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/x10"
+                    android:text=""
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/tv_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.07"
+                    android:layout_gravity="center"
+                    android:background="@color/item_view"
+                    android:padding="@dimen/x10"
+                    android:text=""
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_18" />
+            </FrameLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcy_zhuisu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--//无数据-->
+    <FrameLayout
+        android:id="@+id/fl_wudata"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/liang">
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无追溯记录"
+            android:textSize="@dimen/text_16" />
+    </FrameLayout>
+
+
+</LinearLayout>

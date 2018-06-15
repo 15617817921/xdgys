@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/liang"
+    android:orientation="vertical"
+    tools:context="com.example.chen.hsms.activity.home_ohter.FaFangStateActivity">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40">
+
+            <ImageView
+                android:id="@+id/iv_fafang_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/x10"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="发放情况"
+                android:textColor="@color/brlb_et_text"
+                android:textSize="@dimen/text_17"
+                android:textStyle="normal" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_v" />
+        //有数据
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcy_fafang_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y25"
+                android:gravity="center"
+                android:text="当天已发放3个科室，8个包"
+                android:textColor="@color/lu"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+        //无数据
+
+        <FrameLayout
+            android:id="@+id/ll_wuData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="暂无更多发放数据"
+                android:textSize="@dimen/text_16" />
+        </FrameLayout>
+</LinearLayout>

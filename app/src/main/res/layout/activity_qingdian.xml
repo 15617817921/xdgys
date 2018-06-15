@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_base" />
+    <!--有数据-->
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tool:visibility="visible">
+
+        <com.example.chen.hsms.view.MyTextView
+            android:id="@+id/simpleMarqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="《赋得古原草送别》离离原上草，一岁一枯荣。 野火烧不尽，春风吹又生。远芳侵古道，晴翠接荒城。又送王孙去，萋萋满别情。"
+
+            />
+        <!--<com.sunfusheng.marqueeview.MarqueeView-->
+        <!--android:id="@+id/marqueeView"-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--app:mvAnimDuration="1000"-->
+        <!--app:mvDirection="bottom_to_top"-->
+        <!--app:mvInterval="3000"-->
+        <!--app:mvTextColor="@color/white"-->
+        <!--app:mvTextSize="14sp"-->
+        <!--app:mvSingleLine="true"/>-->
+        <!--多少物品包-->
+        <TextView
+            android:id="@+id/tvQqingdianNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/item_view"
+            android:padding="@dimen/x10"
+            android:text="" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--未审核-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/x10"
+                    android:text="未审核"
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_16" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_weishenhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y10"
+                    android:background="@color/item_view" />
+                <!--已审核-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/x10"
+                    android:text="已审核"
+                    android:textColor="@color/state"
+                    android:textSize="@dimen/text_16" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lv_shenhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <!--没数据-->
+    <LinearLayout
+        android:id="@+id/ll_wudata"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="暂无可清点的物品包"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_qingdian_qingkong"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y40"
+            android:layout_margin="@dimen/x10"
+            android:layout_weight="1"
+            android:background="@drawable/next_tv_bg"
+            android:gravity="center"
+            android:text="@string/qingkong"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+</LinearLayout>

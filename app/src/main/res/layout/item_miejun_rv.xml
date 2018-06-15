@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_miejun_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_tiaomahao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/liang"
+        android:paddingBottom="@dimen/x3"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x3"
+        android:text="00000"
+        android:textColor="@color/hei" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x8"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10"
+        android:paddingTop="@dimen/x8">
+
+        <TextView
+            android:id="@+id/bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_bao"
+            android:gravity="center"
+            android:text="包"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_9" />
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_toRightOf="@+id/bao"
+            android:text="绷带包"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_13" />
+
+        <TextView
+            android:id="@+id/tv_baostate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="个"
+            android:textColor="@color/hui"
+            android:textSize="@dimen/text_15" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/jian"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="1"-->
+            <!--android:textColor="@color/hei"-->
+            <!--android:textSize="@dimen/text_15" />-->
+    </RelativeLayout>
+</LinearLayout>

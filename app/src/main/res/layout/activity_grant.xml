@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liang"
+    android:orientation="vertical"
+    tools:context="com.example.chen.hsms.activity.home_down.GrantActivity">
+
+
+    <include layout="@layout/layout_base" />
+    <!--输入工号科室-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/liang"
+        android:orientation="horizontal">
+        <!--科室人工号-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/x5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y35"
+                android:layout_marginLeft="@dimen/x10"
+                android:gravity="center"
+                android:text="接收人:"
+                android:textColor="@color/text_a"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/et_ffjsr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/x5"
+                android:background="@drawable/bg_radiobutton"
+                android:cursorVisible="false"
+                android:ems="6"
+                android:gravity="center"
+                android:hint="@string/gonghao"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_a"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <!--科室名称-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/x5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y35"
+                android:layout_marginLeft="@dimen/x10"
+                android:gravity="center_vertical"
+                android:text="接收科室:"
+                android:textColor="@color/text_a"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/et_ffks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/x5"
+                android:background="@drawable/bg_radiobutton"
+                android:gravity="center"
+                android:hint="@string/keshixz"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_a"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+    <!--有数据-->
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_grant_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y35"
+            android:background="@color/item_view"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x10"
+            android:text=""
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.chen.hsms.view.CoustomListView
+                    android:id="@+id/rcy_grant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_fafangren"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/y35"-->
+                <!--android:layout_marginLeft="@dimen/x10"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="发放人：王武"-->
+                <!--android:textColor="@color/text_a"-->
+                <!--android:textSize="@dimen/text_12" />-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--无数据-->
+    <FrameLayout
+
+        android:id="@+id/fl_wudata"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="暂无发放数据"
+            android:textSize="@dimen/text_16" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_grantkeshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brlb_et">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/next_tv_bg"
+            android:gravity="center"
+            android:text="@string/ffkeshi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_16" />
+    </FrameLayout>
+    <!--<FrameLayout-->
+    <!--android:id="@+id/fl__grant_last"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/y40"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="@dimen/x10"-->
+    <!--android:background="@drawable/next_tv_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/ffkeshi"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/text_16" />-->
+    <!--</FrameLayout>-->
+
+
+</LinearLayout>

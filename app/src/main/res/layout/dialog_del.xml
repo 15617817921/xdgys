@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_commit_item"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x8"
+        android:text="提示"
+        android:textColor="#41AE1D"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/blue"/>
+    <TextView
+        android:layout_marginLeft="@dimen/x10"
+        android:padding="@dimen/x10"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="已选好批次，是否扫描清洗机"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D1D1D1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#D1D1D1"/>
+
+        <Button
+            android:id="@+id/bt_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/tv_del"-->
+        <!--android:layout_width="@dimen/x250"-->
+        <!--android:layout_height="@dimen/y40"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="@dimen/text_14"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:text="删 除" />-->
+</LinearLayout>

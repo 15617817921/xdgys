@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_item_brlb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:id="@+id/tv_item_brlb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x10"
+            android:text="莉莉"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tv_item_brlb_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x10"
+            android:text="男"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+        <TextView
+            android:id="@+id/tv_item_brlb_number"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x8"
+            android:text="456982123"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/text_14" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@color/item_view" />
+</LinearLayout>
